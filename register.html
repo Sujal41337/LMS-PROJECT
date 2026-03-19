@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LMS Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <input type="text" id="name" placeholder="Full Name" required>
+         <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+         <select id="role" required>
+
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+        </select>
+
+        <button onclick="register()">Register</button>
+        <p><a href="index.html">Back to Login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

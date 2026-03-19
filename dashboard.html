@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDashboard()">
+
+    <div class="container">
+        <h2 id="welcome"></h2>
+        <button onclick="logout()">Logout</button>
+
+        <div id="instructorPanel" style="display:none;">
+            <h3>Create Course</h3>
+           <input type="text" id="courseTitle" placeholder="Course Title">
+<input type="text" id="courseDesc" placeholder="Course Description">
+
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+        <h3>Courses</h3>
+        <div id="courseList"></div>
+        <div id="quizSection" style="display:none; margin-top:15px;">
+    <h3>Quiz</h3>
+    <p id="quizQuestion"></p>
+    <div id="quizOptions"></div>
+    <button onclick="submitQuiz()">Submit</button>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
